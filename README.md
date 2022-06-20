@@ -2,7 +2,7 @@
 
 `npm i`
 
-## start project 
+## start project - http://localhost:3000 
 
 `npm start`
 
