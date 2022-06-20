@@ -1,3 +1,1 @@
-export const parseURL = (url) => {
-  return new URL(url);
-}
+export const parseURL = url => new URL(url);
