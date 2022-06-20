@@ -1,0 +1,70 @@
+.card {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:first-of-type {
+    margin: 0;
+  }
+  &-big {
+    display: block;
+    .card__rect-wrapper {
+      width: 150px;
+      height: 150px;
+    }
+    .card__rect {
+      font-size: 25px;
+    }
+    .card__descr {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__rect-wrapper {
+    padding: 3px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+
+  &__rect {
+    padding: 10px;
+    height: 100%;
+    border-radius: 5px;
+    background: green;
+    color: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    &-pink {
+      background: pink;
+    }
+    &-blue {
+      background: blue;
+    }
+  }
+  &__input:checked + & {
+    opacity: 0.5;
+  }
+  &__descr {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    max-width: 200px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: grey;
+    }
+  }
+}

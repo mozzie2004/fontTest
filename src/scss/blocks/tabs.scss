@@ -1,0 +1,13 @@
+.tabs {
+  display: flex;
+  &__item {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: grey;
+    cursor: pointer;
+    white-space: nowrap;
+    &-active {
+      color: orange;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Please select one font</h1>
+      <div class="tabs">
+        <div class="tabs__item">my fonts</div>
+        <div class="tabs__item tabs__item-active">by fonts</div>
+      </div>
+    </header>
+    <div class="content hide">
+      You don't have any fonts yet
+    </div>
+    <div class="content">
+      <input class="card__input" type="radio" name="font" id="green">
+      <label for="green" class="card card-big">
+        <div class="card__rect-wrapper">
+          <div class="card__rect">M</div>
+        </div>
+        <div class="card__descr">
+          Merriweather project is led by Sorkin type
+        </div>
+      </label>
+      <div>
+        <input class="card__input" type="radio" name="font" id="pink">
+        <label for="pink" class="card">
+          <div class="card__rect-wrapper">
+            <div class="card__rect card__rect-pink">R</div>
+          </div>
+          <div class="card__descr">
+            Roboto doesn't compromise, allowing letters
+          </div>
+        </label>
+        <input class="card__input" type="radio" name="font" id="blue">
+        <label for="blue" class="card">
+          <div class="card__rect-wrapper">
+            <div class="card__rect card__rect-blue">NS</div>
+          </div>
+          <div class="card__descr">
+            Noto Sans covers over 30 scripts
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
